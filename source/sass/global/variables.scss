@@ -1,0 +1,36 @@
+// Color
+
+$gray-basic: #e5e5e5;
+$gray-300: #b2b0ab;
+$gray-400: #989691;
+$gray-750: #383736;
+$gray-100: #e7e4de;
+$gray-50: #f0eeeb;
+$gray-40: #f5f4f2;
+$white-basic: #ffffff;
+$black-basic: #000000;
+$green-500: #64b851;
+$green-20: #f2faf0;
+$red-500: #eb4b51;
+$red-20: #faf0f0;
+$blue-500: #2794db;
+$yellow-500: #fac62d;
+$yellow-700: #f0b505;
+$yellow-800: #e1ab08;
+
+// Fonts
+
+$basic-font: "Roboto", "Arial", sans-serif;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 920px;
+$desktop-extra-width: 1440px;
+$tablet: "(min-width: #{$tablet-width})";
+$desktop: "(min-width: #{$desktop-width})";
+$desktop-extra: "(min-width: #{$desktop-extra-width})";
+
+// Other
+
+$close-size: 24px;

@@ -1,0 +1,160 @@
+$button-padding: 16px;
+$cross-width: 10px;
+$cross-offset: 11px;
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  font-weight: 500;
+  font-family: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--secondary {
+    padding: 8px $button-padding;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    border-radius: 22px;
+  }
+
+  &--yes {
+    color: $green-500;
+
+    background-color: $green-20;
+
+    &::before {
+      content: "";
+
+      width: 6px;
+      height: 12px;
+      margin-right: 14px;
+
+      border-right: 2px solid $green-500;
+      border-bottom: 2px solid $green-500;
+      border-radius: 2px;
+      transform: translate(2px, -2px) rotate(45deg); // подгон pixel-perfect
+    }
+  }
+
+  &--no {
+    position: relative;
+
+    padding-left: $button-padding + $cross-width + $cross-offset;
+
+    color: $red-500;
+
+    background-color: $red-20;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: $button-padding + $cross-width / 2;
+
+      width: 2px;
+      height: 14px;
+
+      background-color: $red-500;
+      border-radius: 2px;
+    }
+
+    &::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  &--primary {
+    width: 100%;
+    padding: 12px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-750;
+
+    background-color: $yellow-500;
+    border-radius: 6px;
+
+    &::before {
+      content: "";
+
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+
+      background: url("../img/icon-key.svg") center/cover no-repeat;
+    }
+
+    &:hover {
+      background-color: $yellow-700;
+    }
+
+    &:active {
+      background-color: $yellow-800;
+    }
+  }
+
+  &--close {
+    position: relative;
+
+    width: $close-size;
+    height: $close-size;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 2px;
+      height: 19px;
+
+      background-color: $gray-300;
+      border-radius: 2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: $gray-40;
+      border-radius: 4px;
+      box-shadow: 0 0 0 2px $gray-40;
+
+      &::before,
+      &::after {
+        background-color: $gray-750;
+      }
+    }
+
+    &:active {
+      background-color: $gray-100;
+      border-radius: 4px;
+      box-shadow: 0 0 0 2px $gray-100;
+
+      &::before,
+      &::after {
+        background-color: $gray-750;
+      }
+    }
+  }
+}

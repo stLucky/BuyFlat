@@ -1,0 +1,13 @@
+$x-offset: 8px;
+$y-offset: 4px;
+
+.answers {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: #{-$y-offset} #{-$x-offset};
+}
+
+.answers__item {
+  margin: #{$y-offset} #{$x-offset};
+}

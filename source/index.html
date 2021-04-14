@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Поиск квартир по выгодным ценам</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <main style="width: 100%;">
+    <h1 class="visually-hidden">
+      Поиск квартир по выгодным ценам
+    </h1>
+    <section class="flat">
+      <div class="flat__desc">
+        <h2 class="flat__title" aria-label="Двухкомнатная квартира">
+          2-к квартира
+        </h2>
+        <div class="flat__img-wrap">
+          <img class="flat__img" src="img/apartment-plan.svg" alt="План квартиры" width="86" height="160">
+        </div>
+        <table class="flat__table flat-parameters">
+          <caption class="visually-hidden">
+            Характеристики квартиры
+          </caption>
+          <tbody class="flat-parameters__body">
+            <tr class="flat-parameters__wrap">
+              <td class="flat-parameters__term">
+                Этаж
+              </td>
+              <td class="flat-parameters__definition">
+                3 из 19
+              </td>
+            </tr>
+            <tr class="flat-parameters__wrap">
+              <td class="flat-parameters__term">
+                Высота потолков
+              </td>
+              <td class="flat-parameters__definition">
+                3, 2 м
+              </td>
+            </tr>
+            <tr class="flat-parameters__wrap">
+              <td class="flat-parameters__term">
+                Общая площадь
+              </td>
+              <td class="flat-parameters__definition">
+                32,24 м<sup class="flat-parameters__sup">2</sup>
+              </td>
+            </tr>
+            <tr class="flat-parameters__wrap flat-parameters__wrap--finishing ">
+              <td class="flat-parameters__term">
+                Отделка
+              </td>
+              <td class="flat-parameters__definition">
+                Предчистовая
+              </td>
+            </tr>
+            <tr class="flat-parameters__wrap">
+              <td class="flat-parameters__term">
+                Жилая площадь
+              </td>
+              <td class="flat-parameters__definition">
+                22,24 м<sup class="flat-parameters__sup">2</sup>
+              </td>
+            </tr>
+            <tr class="flat-parameters__wrap">
+              <td class="flat-parameters__term">
+                Площадь кухни
+              </td>
+              <td class="flat-parameters__definition">
+                14,24 м<sup class="flat-parameters__sup">2</sup>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="flat__answers answers">
+          <li class="answers__item">
+            <button class="button button--secondary button--yes">
+              Вы были на просмотре
+            </button>
+          </li>
+          <li class="answers__item">
+            <button class="button button--secondary button--no">
+              Дом аккредитован другим банком
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="flat__purchase">
+        <p class="flat__text">
+          Ваша цена по брони до
+          <time datetime="2021-09-16" class="flat__time">
+            19 сентября
+          </time><br>
+          <span class="flat__price flat__price--less">
+            3 312 666 р
+          </span>
+        </p>
+        <p class="flat__text">
+          <span class="flat__text-offset">
+            Текущая цена у застройщика
+          </span><br>
+          дороже на
+          <span class="flat__price flat__price--more">
+            324 825 р
+          </span>
+        </p>
+        <a class="button button--primary" href="#">
+          Выбрать для покупки
+        </a>
+      </div>
+      <button class="flat__close button button--close" type="button" aria-label="Закрыть"></button>
+    </section>
+  </main>
+  <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
+</body>
+</html>
